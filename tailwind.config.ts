@@ -67,13 +67,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom crypto colors
+				// Brand colors (renamed from crypto for compatibility)
 				crypto: {
-					blue: '#1A1F2C',
-					purple: '#9b87f5',
-					'light-purple': '#D6BCFA',
-					'dark-purple': '#6E59A5',
-					accent: '#F97316',
+					blue: '#ffffff', // White background
+					purple: '#16a34a', // Primary Green
+					'light-purple': '#4ade80', // Light Green
+					'dark-purple': '#15803d', // Dark Green
+					accent: '#facc15', // Yellow Accent
 				}
 			},
 			fontFamily: {

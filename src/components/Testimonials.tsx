@@ -38,13 +38,13 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="py-24 bg-gradient-to-b from-crypto-blue to-[#12141C]">
+    <section id="testimonials" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">
             What Our Users Say
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             Join thousands of satisfied traders who have transformed their trading experience with CryptoFlow.
           </p>
         </div>
@@ -61,22 +61,22 @@ const Testimonials = () => {
             >
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="min-w-full px-4">
-                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 md:p-10">
+                  <div className="bg-white border border-gray-100 rounded-xl p-8 md:p-10 shadow-sm hover:shadow-md transition-shadow">
                     <div className="flex mb-6">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+                        <Star key={i} className="h-5 w-5 text-accent fill-accent" />
                       ))}
                     </div>
-                    <p className="text-lg md:text-xl text-gray-200 mb-8">"{testimonial.quote}"</p>
+                    <p className="text-lg md:text-xl text-gray-700 mb-8 italic">"{testimonial.quote}"</p>
                     <div className="flex items-center">
                       <img 
                         src={testimonial.avatar} 
                         alt={testimonial.author} 
-                        className="w-12 h-12 rounded-full object-cover border-2 border-crypto-purple"
+                        className="w-12 h-12 rounded-full object-cover border-2 border-primary"
                       />
                       <div className="ml-4">
-                        <p className="font-medium text-white">{testimonial.author}</p>
-                        <p className="text-sm text-gray-400">{testimonial.role}</p>
+                        <p className="font-medium text-foreground">{testimonial.author}</p>
+                        <p className="text-sm text-gray-500">{testimonial.role}</p>
                       </div>
                     </div>
                   </div>
@@ -91,7 +91,7 @@ const Testimonials = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${currentIndex === index ? 'w-8 bg-crypto-purple' : 'w-2 bg-gray-500'}`}
+                className={`h-2 rounded-full transition-all duration-300 ${currentIndex === index ? 'w-8 bg-primary' : 'w-2 bg-gray-300'}`}
                 aria-label={`Go to testimonial ${index + 1}`}
               ></button>
             ))}
