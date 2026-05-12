@@ -15,40 +15,40 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 animate-fade-in-left">
             <div className="inline-flex items-center bg-accent/10 backdrop-blur-sm border border-accent/20 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-xs font-medium text-accent-foreground mr-2 bg-accent px-2 py-0.5 rounded-full">New Feature</span>
-              <span className="text-xs text-gray-600">AI-Powered Trading Signals</span>
+              <span className="text-xs font-medium text-accent-foreground mr-2 bg-accent px-2 py-0.5 rounded-full">Established 2021</span>
+              <span className="text-xs text-gray-600">Global Advisory & Consulting Firm</span>
               <ChevronRight className="h-4 w-4 text-gray-400 ml-1" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-foreground">
-              <span className="text-gradient">Trade Crypto</span> with Confidence & Clarity
+              <span className="text-gradient">Empowering Growth</span>, Catalyzing Investments
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-lg">
-              Experience seamless cryptocurrency trading with real-time analytics, AI-powered insights, and zero commission fees.
+              Expert advisory and consulting services for financial institutions, government organizations, and international entities across Africa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-crypto-dark-purple text-white px-8 py-6">
-                Start Trading
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6">
+                Our Services
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" size="lg" className="border-gray-300 text-gray-700 hover:bg-gray-50 py-6">
-                View Demo
+                Learn More
                 <ArrowUpRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
             <div className="mt-8 flex items-center space-x-6">
               <div>
-                <p className="text-2xl font-bold text-foreground">$2.5B+</p>
-                <p className="text-sm text-gray-500">Trading Volume</p>
+                <p className="text-2xl font-bold text-foreground">2021</p>
+                <p className="text-sm text-gray-500">Year Founded</p>
               </div>
               <div className="h-12 w-px bg-gray-200"></div>
               <div>
-                <p className="text-2xl font-bold text-foreground">120K+</p>
-                <p className="text-sm text-gray-500">Active Traders</p>
+                <p className="text-2xl font-bold text-foreground">5+</p>
+                <p className="text-sm text-gray-500">Key Sectors</p>
               </div>
               <div className="h-12 w-px bg-gray-200"></div>
               <div>
-                <p className="text-2xl font-bold text-foreground">50+</p>
-                <p className="text-sm text-gray-500">Global Markets</p>
+                <p className="text-2xl font-bold text-foreground">Global</p>
+                <p className="text-sm text-gray-500">Reach & Impact</p>
               </div>
             </div>
           </div>
@@ -56,8 +56,8 @@ const Hero = () => {
           <div className="lg:w-1/2 mt-12 lg:mt-0 animate-fade-in-right">
             <div className="relative max-w-md mx-auto animate-float">
               <img 
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&h=800"
-                alt="Trading platform dashboard" 
+                src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&h=800"
+                alt="Professional consultation" 
                 className="rounded-xl shadow-2xl border border-gray-100"
               />
               <div className="absolute -right-6 -bottom-6 bg-white/90 backdrop-blur-md rounded-lg p-4 border border-green-100 shadow-lg">
@@ -68,8 +68,8 @@ const Hero = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs text-gray-400">24h Change</p>
-                    <p className="text-lg font-bold text-green-500">+12.34%</p>
+                    <p className="text-xs text-gray-400">Impact Score</p>
+                    <p className="text-lg font-bold text-green-500">Transformative</p>
                   </div>
                 </div>
               </div>
@@ -81,8 +81,8 @@ const Hero = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs text-gray-500">Security Level</p>
-                    <p className="text-lg font-bold text-foreground">Enterprise</p>
+                    <p className="text-xs text-gray-500">Service Quality</p>
+                    <p className="text-lg font-bold text-foreground">Excellence</p>
                   </div>
                 </div>
               </div>

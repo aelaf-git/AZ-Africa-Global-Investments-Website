@@ -42,10 +42,10 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">
-            What Our Users Say
+            What Our Partners Say
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Join thousands of satisfied traders who have transformed their trading experience with CryptoFlow.
+            Trusted by financial institutions, government organizations, and international entities across the globe.
           </p>
         </div>
 

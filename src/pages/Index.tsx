@@ -2,11 +2,11 @@
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import About from '@/components/About';
 import Features from '@/components/Features';
+import VisionMission from '@/components/VisionMission';
 import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
-import Pricing from '@/components/Pricing';
-import FAQ from '@/components/FAQ';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
@@ -18,18 +18,18 @@ const Index = () => {
 
   // Set page title
   useEffect(() => {
-    document.title = "CryptoFlow | Modern Cryptocurrency Trading";
+    document.title = "AZ Africa Global Investments | Advisory & Consulting";
   }, []);
   
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Navbar />
       <Hero />
+      <About />
       <Features />
+      <VisionMission />
       <HowItWorks />
       <Testimonials />
-      <Pricing />
-      <FAQ />
       <CTA />
       <Footer />
       <ScrollToTop />
