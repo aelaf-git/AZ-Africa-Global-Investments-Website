@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/azafritp/public_html
+    - /bin/cp -a dist/. $DEPLOYPATH
