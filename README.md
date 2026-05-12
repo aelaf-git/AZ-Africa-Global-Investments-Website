@@ -1,41 +1,52 @@
-# CryptoFlow – One Page Template
-#### Preview
+# AZ Africa Global Investments Website
 
- - [Demo](https://themewagon.github.io/cryptoflow/)
+A modern, professional website for AZ Africa Global Investments, a leading African advisory and consulting firm.
 
-#### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/cryptoflow/)
+## Features
+
+- **Professional Advisory Messaging**: Tailored content for financial institutions, government organizations, and international entities.
+- **Dynamic Service Sections**: Detailed overview of advisory, investment, trade, and technology consulting services.
+- **Strategic Vision & Mission**: Clear presentation of the firm's strategic direction and core values.
+- **Modern Design System**: A premium green and gold aesthetic optimized for professional engagement.
+- **Responsive & High Performance**: Built with React, Vite, and Tailwind CSS for a seamless user experience across all devices.
 
 ## Getting Started
 
-1. Clone Repository
-```
-git clone https://github.com/themewagon/cryptoflow.git
-```
-2. Install Dependencies
-```
-npm i
-```
-3. Run the development server:
+### Prerequisites
 
+- Node.js (v18+)
+- npm or bun
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone [repository-url]
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-## Author 
+4. Build for production:
+```bash
+npm run build
 ```
-Design and code is completely written by codescandy and development team. 
-```
+
+## Technologies Used
+
+- **Framework**: React 18
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Animations**: Tailwind Animate & Custom Keyframes
 
 ## License
 
- - Design and Code is Copyright &copy; [codescandy](https://codescandy.com)
- - Licensed cover under [MIT]
- - Distributed by [ThemeWagon](https://themewagon.com)
-
+Copyright © 2024 AZ Africa Global Investments. All rights reserved.

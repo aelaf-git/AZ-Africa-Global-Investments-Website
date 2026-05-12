@@ -67,12 +67,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Brand colors (renamed from crypto for compatibility)
-				crypto: {
-					blue: '#ffffff', // White background
-					purple: '#16a34a', // Primary Green
-					'light-purple': '#4ade80', // Light Green
-					'dark-purple': '#15803d', // Dark Green
+				// Brand colors for AZ Africa
+				az: {
+					white: '#ffffff', // White background
+					primary: '#16a34a', // Primary Green
+					light: '#4ade80', // Light Green
+					dark: '#15803d', // Dark Green
 					accent: '#facc15', // Yellow Accent
 				}
 			},
