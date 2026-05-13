@@ -27,7 +27,7 @@ const About = () => {
           <div className="lg:w-1/2 relative animate-on-scroll">
             <div className="relative z-10 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&h=800" 
+                src="/about-us.png" 
                 alt="About AZ Africa Global Investments"
                 className="w-full h-auto object-cover"
               />
