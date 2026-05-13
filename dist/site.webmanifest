@@ -1,0 +1,19 @@
+{
+  "name": "AZ Africa Global Investments",
+  "short_name": "AZ Africa",
+  "icons": [
+    {
+      "src": "/az-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/az-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
