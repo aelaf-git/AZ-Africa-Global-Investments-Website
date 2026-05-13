@@ -25,11 +25,11 @@ const About = () => {
             </div>
           </div>
           <div className="lg:w-1/2 relative animate-on-scroll">
-            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative z-10 overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&h=800" 
                 alt="About AZ Africa Global Investments"
-                className="w-full h-auto"
+                className="w-full h-auto object-cover"
               />
             </div>
             {/* Decorative elements */}

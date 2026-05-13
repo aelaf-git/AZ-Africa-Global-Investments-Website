@@ -14,10 +14,9 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 animate-fade-in-left">
-            <div className="inline-flex items-center bg-accent/10 backdrop-blur-sm border border-accent/20 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-xs font-medium text-accent-foreground mr-2 bg-accent px-2 py-0.5 rounded-full">Established 2021</span>
-              <span className="text-xs text-gray-600">Global Advisory & Consulting Firm</span>
-              <ChevronRight className="h-4 w-4 text-gray-400 ml-1" />
+            <div className="inline-flex items-center mb-6">
+              <span className="text-xs font-semibold text-accent uppercase tracking-wider mr-2">Established 2021</span>
+              <span className="text-xs text-gray-500 font-medium">Global Advisory & Consulting Firm</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-foreground">
               <span className="text-gradient">Empowering Growth</span>, Catalyzing Investments
@@ -57,8 +56,8 @@ const Hero = () => {
             <div className="relative max-w-md mx-auto animate-float">
               <img 
                 src="/az-main.png"
-                alt="AZ Africa Global Investments Hero" 
-                className="rounded-xl shadow-2xl border border-gray-100 w-full object-cover"
+                alt="AZ Africa Global Investments" 
+                className="w-full h-auto animate-float object-contain"
               />
 
             </div>
