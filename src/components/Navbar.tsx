@@ -20,9 +20,12 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md py-3 shadow-lg' : 'py-6'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold text-foreground">
-            AZ <span className="text-primary">Africa</span>
-          </h1>
+          <Link to="/" className="flex items-center gap-3">
+            <img src="/az-logo.png" alt="AZ Africa Global Investments" className="h-12 md:h-16 w-auto object-contain" />
+            <span className="text-xl md:text-2xl font-bold text-foreground">
+              AZ Africa <span className="text-primary font-extrabold">Global Investments</span>
+            </span>
+          </Link>
         </div>
 
         {/* Desktop menu */}

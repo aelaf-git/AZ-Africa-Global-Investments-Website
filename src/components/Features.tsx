@@ -12,7 +12,7 @@ const Features = () => {
             Our Services
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            AZ Africa offers a comprehensive range of advisory and consulting services designed to foster partnerships and catalyze transformative investments.
+            AZ Africa Global Investments offers a comprehensive range of advisory and consulting services designed to foster partnerships and catalyze transformative investments.
           </p>
         </div>
 

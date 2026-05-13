@@ -18,7 +18,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Got questions about AZ Africa? We've got answers. If you don't see what you're looking for, reach out to our team.
+            Got questions about AZ Africa Global Investments? We've got answers. If you don't see what you're looking for, reach out to our team.
           </p>
         </div>
 

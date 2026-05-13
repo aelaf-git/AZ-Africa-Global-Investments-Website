@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-8">
           <div className="lg:col-span-2">
-            <h2 className="text-2xl font-bold text-foreground mb-4">
-              AZ <span className="text-primary">Africa</span>
-            </h2>
+            <div className="flex items-center mb-4">
+              <img src="/az-logo.png" alt="AZ Africa Global Investments" className="h-16 w-auto object-contain" />
+            </div>
             <p className="text-gray-600 mb-6 max-w-xs">
               Leading African advisory firm providing expert consulting and investment facilitation services since 2021.
             </p>

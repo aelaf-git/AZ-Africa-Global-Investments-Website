@@ -7,14 +7,14 @@ const About = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2 animate-on-scroll">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
-              About AZ Africa
+              About AZ Africa Global Investments
             </h2>
             <div className="space-y-4 text-gray-600 text-lg">
               <p>
                 AZ Africa Global Investments was founded in 2021 and evolved into its current structure in 2024. The company provides expert advisory and consulting services to financial institutions, government organizations, and international entities.
               </p>
               <p>
-                AZ Africa is known for its comprehensive approach to diverse thematic areas such as business, health, peacebuilding, youth engagement, and financial services.
+                AZ Africa Global Investments is known for its comprehensive approach to diverse thematic areas such as business, health, peacebuilding, youth engagement, and financial services.
               </p>
               <p>
                 In addition to consulting, AZ Africa plays a pivotal role in attracting investors to Ethiopia and facilitating import-export activities. The company also has a strong presence in media and communication, technology and innovation, and marketing services.
@@ -28,7 +28,7 @@ const About = () => {
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&h=800" 
-                alt="About AZ Africa"
+                alt="About AZ Africa Global Investments"
                 className="w-full h-auto"
               />
             </div>
