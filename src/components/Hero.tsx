@@ -10,38 +10,44 @@ const slides = [
     titleLead: "Empowering",
     titleAccent: "Growth,",
     subtitle: "Catalyzing Investments",
-    description: "Expert advisory and consulting services for financial institutions, government organizations, and international entities across Africa.",
+    description:
+      "Award-winning Pan-African advisory, consulting, and investment facilitation for governments, financial institutions, and international organizations.",
     image: "/az-main.png",
     imageWidth: 1024,
     imageHeight: 411,
-    founded: "2021",
-    sectors: "5+",
-    reach: "Global"
+    badge: "Founded 2017 · Restructured 2021",
+    stat1: { value: "2017", label: "Founded" },
+    stat2: { value: "9+", label: "Service Areas" },
+    stat3: { value: "Global", label: "Reach" },
   },
   {
-    titleLead: "Strategic",
+    titleLead: "Pan-African",
     titleAccent: "Advisory,",
-    subtitle: "Global Perspectives",
-    description: "Tailored consulting solutions designed to navigate complex market dynamics and unlock sustainable value in emerging economies.",
+    subtitle: "Global Partnerships",
+    description:
+      "Delivering strategic solutions across Africa, the Middle East, and the Far East—from investment promotion to diplomacy and resource mobilization.",
     image: "/about-us.jpg",
     imageWidth: 1024,
     imageHeight: 571,
-    founded: "2021",
-    sectors: "Advisory",
-    reach: "Africa"
+    badge: "Africa · Middle East · Far East",
+    stat1: { value: "G2G", label: "Diplomatic Support" },
+    stat2: { value: "PPP", label: "Policy Advisory" },
+    stat3: { value: "Multi", label: "Sector Expertise" },
   },
   {
-    titleLead: "Catalyzing",
-    titleAccent: "Capital,",
-    subtitle: "Driving Innovation",
-    description: "Bridging the gap between international investors and transformative opportunities across the African continent.",
+    titleLead: "Connecting",
+    titleAccent: "Opportunity,",
+    subtitle: "Driving Prosperity",
+    description:
+      "Building sustainable partnerships and transformative solutions that advance growth and development across emerging and established markets.",
     image: "/az-main.png",
     imageWidth: 1024,
     imageHeight: 411,
-    founded: "2021",
-    sectors: "Finance",
-    reach: "Regional"
-  }
+    badge: "Advisory · Consulting · Investment",
+    stat1: { value: "Grant", label: "Mobilization" },
+    stat2: { value: "Mega", label: "Project Support" },
+    stat3: { value: "Impact", label: "Driven" },
+  },
 ];
 
 const Hero = () => {
@@ -76,9 +82,10 @@ const Hero = () => {
               <div className="container mx-auto px-4 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center">
                   <div className="lg:w-1/2 animate-fade-in-left">
-                    <div className="inline-flex items-center mb-6">
-                      <span className="text-xs font-semibold text-accent uppercase tracking-wider mr-2">Established {slide.founded}</span>
-                      <span className="text-xs text-gray-500 font-medium">Global Advisory & Consulting Firm</span>
+                    <div className="inline-flex flex-wrap items-center gap-x-2 gap-y-1 mb-6">
+                      <span className="text-xs font-semibold text-accent uppercase tracking-wider">{slide.badge}</span>
+                      <span className="text-xs text-gray-400 hidden sm:inline">|</span>
+                      <span className="text-xs text-gray-500 font-medium">Pan-African Advisory & Consulting Firm</span>
                     </div>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                       <span className="text-primary">{slide.titleLead} </span>
@@ -89,30 +96,34 @@ const Hero = () => {
                       {slide.description}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
-                      <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 rounded-none transition-all duration-300">
-                        Our Services
-                        <ArrowRight className="ml-2 h-5 w-5" />
+                      <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 rounded-none transition-all duration-300">
+                        <a href="#services">
+                          Our Services
+                          <ArrowRight className="ml-2 h-5 w-5" />
+                        </a>
                       </Button>
-                      <Button variant="outline" size="lg" className="border-gray-300 text-gray-700 hover:bg-gray-50 py-6 rounded-none bg-white">
-                        Learn More
-                        <ArrowUpRight className="ml-2 h-5 w-5" />
+                      <Button asChild variant="outline" size="lg" className="border-gray-300 text-gray-700 hover:bg-gray-50 py-6 rounded-none bg-white">
+                        <a href="#about">
+                          Learn More
+                          <ArrowUpRight className="ml-2 h-5 w-5" />
+                        </a>
                       </Button>
                     </div>
                     
-                    <div className="mt-12 flex items-center space-x-8">
+                    <div className="mt-12 flex flex-wrap items-center gap-6 sm:gap-8">
                       <div>
-                        <p className="text-2xl font-bold text-foreground">{slide.founded}</p>
-                        <p className="text-sm text-gray-500">Year Founded</p>
+                        <p className="text-2xl font-bold text-foreground">{slide.stat1.value}</p>
+                        <p className="text-sm text-gray-500">{slide.stat1.label}</p>
                       </div>
-                      <div className="h-12 w-px bg-gray-200"></div>
+                      <div className="h-12 w-px bg-gray-200 hidden sm:block"></div>
                       <div>
-                        <p className="text-2xl font-bold text-foreground">{slide.sectors}</p>
-                        <p className="text-sm text-gray-500">Key Sectors</p>
+                        <p className="text-2xl font-bold text-foreground">{slide.stat2.value}</p>
+                        <p className="text-sm text-gray-500">{slide.stat2.label}</p>
                       </div>
-                      <div className="h-12 w-px bg-gray-200"></div>
+                      <div className="h-12 w-px bg-gray-200 hidden sm:block"></div>
                       <div>
-                        <p className="text-2xl font-bold text-foreground">{slide.reach}</p>
-                        <p className="text-sm text-gray-500">Reach & Impact</p>
+                        <p className="text-2xl font-bold text-foreground">{slide.stat3.value}</p>
+                        <p className="text-sm text-gray-500">{slide.stat3.label}</p>
                       </div>
                     </div>
                   </div>

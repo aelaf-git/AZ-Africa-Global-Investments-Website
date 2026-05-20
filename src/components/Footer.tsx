@@ -1,5 +1,24 @@
-import { Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
+import { Facebook, Twitter, Linkedin } from 'lucide-react';
 import OptimizedImage from '@/components/OptimizedImage';
+
+const serviceLinks = [
+  'Investment & Partnerships',
+  'Diplomatic Relations',
+  'Resource Mobilization',
+  'Policy Advisory',
+  'Business Development',
+  'Security Advisory',
+];
+
+const companyLinks = [
+  { href: '#about', label: 'About Us' },
+  { href: '#services', label: 'Services' },
+  { href: '#vision-mission', label: 'Vision & Mission' },
+  { href: '#why-choose-us', label: 'Why Choose Us' },
+  { href: '#partners', label: 'Global Partners' },
+  { href: '#news', label: 'News' },
+  { href: '#contact', label: 'Contact' },
+];
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,21 +40,18 @@ const Footer = () => {
                 AZ Africa <span className="text-primary font-extrabold">Global Investments</span>
               </h2>
             </div>
-            <p className="text-gray-600 mb-6 max-w-xs">
-              Leading African advisory firm providing expert consulting and investment facilitation services since 2021.
+            <p className="text-gray-600 mb-6 max-w-sm">
+              Award-winning Pan-African advisory, consulting, and investment facilitation firm—founded in 2017, restructured in 2021.
             </p>
             <div className="flex space-x-4">
-              <a href="#!" className="text-gray-500 hover:text-primary transition-colors">
+              <a href="#!" className="text-gray-500 hover:text-primary transition-colors" aria-label="Facebook">
                 <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
               </a>
-              <a href="#!" className="text-gray-500 hover:text-primary transition-colors">
+              <a href="#!" className="text-gray-500 hover:text-primary transition-colors" aria-label="Twitter">
                 <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
               </a>
-              <a href="#!" className="text-gray-500 hover:text-primary transition-colors">
+              <a href="#!" className="text-gray-500 hover:text-primary transition-colors" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
               </a>
             </div>
           </div>
@@ -43,40 +59,43 @@ const Footer = () => {
           <div>
             <h3 className="text-foreground font-bold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Advisory</a></li>
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Investment</a></li>
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Import-Export</a></li>
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Media & PR</a></li>
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Technology</a></li>
+              {serviceLinks.map((label) => (
+                <li key={label}>
+                  <a href="#services" className="text-gray-600 hover:text-primary transition-colors text-sm">
+                    {label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           
           <div>
-            <h3 className="text-foreground font-bold mb-4">Sectors</h3>
-            <ul className="space-y-2">
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Business</a></li>
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Health</a></li>
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Peacebuilding</a></li>
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Youth Engagement</a></li>
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Financial Services</a></li>
+            <h3 className="text-foreground font-bold mb-4">Regions</h3>
+            <ul className="space-y-2 text-gray-600 text-sm">
+              <li>Africa</li>
+              <li>Middle East</li>
+              <li>Far East</li>
+              <li>Global Markets</li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-foreground font-bold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-gray-600 hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#vision-mission" className="text-gray-600 hover:text-primary transition-colors">Vision & Mission</a></li>
-              <li><a href="#values" className="text-gray-600 hover:text-primary transition-colors">Our Values</a></li>
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Legal & Privacy</a></li>
-              <li><a href="#!" className="text-gray-600 hover:text-primary transition-colors">Contact Us</a></li>
+              {companyLinks.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="text-gray-600 hover:text-primary transition-colors text-sm">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-200 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-sm mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-500 text-sm">
               &copy; {currentYear} AZ Africa Global Investments. All rights reserved.
             </p>
             <div className="flex space-x-6">
