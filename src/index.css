@@ -12,27 +12,27 @@
     --card-foreground: 142.1 76.2% 5%;
     --popover: 0 0% 100%;
     --popover-foreground: 142.1 76.2% 5%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --primary: 142.1 76.2% 36.3%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 142.1 76.2% 95%;
+    --secondary-foreground: 142.1 76.2% 10%;
+    --muted: 142.1 20% 96%;
+    --muted-foreground: 142.1 10% 40%;
+    --accent: 47.9 95.8% 51.2%;
+    --accent-foreground: 142.1 76.2% 5%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
-    --sidebar-background: 210 40% 98%;
+    --border: 142.1 30% 90%;
+    --input: 142.1 30% 90%;
+    --ring: 142.1 76.2% 36.3%;
+    --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 221.2 83.2% 53.3%;
+    --sidebar-primary: 142.1 76.2% 36.3%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 40% 96.1%;
-    --sidebar-accent-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 142.1 76.2% 95%;
+    --sidebar-accent-foreground: 142.1 76.2% 10%;
     --sidebar-border: 240 5.9% 90%;
-    --sidebar-ring: 221.2 83.2% 53.3%;
+    --sidebar-ring: 142.1 76.2% 36.3%;
   }
 }
 
@@ -49,22 +49,19 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-green-600 via-green-500 to-yellow-500 bg-clip-text text-transparent;
   }
 
   .bg-gradient-hero {
-    @apply bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950;
-  }
-
-  .bg-gradient-blue-pro {
-    @apply bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900;
+    @apply bg-gradient-to-br from-green-50 via-white to-yellow-50/30;
   }
 
   .hero-glow:after {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1), transparent 70%);
+    background: radial-gradient(circle at 85% 60%, rgba(250, 204, 21, 0.12), transparent 55%),
+      radial-gradient(circle at 50% 50%, rgba(22, 163, 74, 0.05), transparent 70%);
     pointer-events: none;
   }
 }

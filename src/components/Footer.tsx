@@ -1,5 +1,5 @@
-
 import { Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
+import OptimizedImage from '@/components/OptimizedImage';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +10,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-8">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/az-logo.png" alt="AZ Africa Global Investments" className="h-16 w-auto object-contain" />
+              <OptimizedImage
+                src="/az-logo.png"
+                alt="AZ Africa Global Investments"
+                className="h-16 w-auto object-contain"
+                width={256}
+                height={198}
+              />
               <h2 className="text-xl md:text-2xl font-bold text-foreground">
                 AZ Africa <span className="text-primary font-extrabold">Global Investments</span>
               </h2>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import OptimizedImage from '@/components/OptimizedImage';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +22,15 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/" className="flex items-center gap-3">
-            <img src="/az-logo.png" alt="AZ Africa Global Investments" className="h-12 md:h-16 w-auto object-contain" />
+            <OptimizedImage
+              src="/az-logo.png"
+              alt="AZ Africa Global Investments"
+              className="h-12 md:h-16 w-auto object-contain"
+              width={256}
+              height={198}
+              loading="eager"
+              fetchPriority="high"
+            />
             <span className="text-xl md:text-2xl font-bold text-foreground">
               AZ Africa <span className="text-primary font-extrabold">Global Investments</span>
             </span>

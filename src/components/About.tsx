@@ -1,4 +1,5 @@
 import React from 'react';
+import OptimizedImage from '@/components/OptimizedImage';
 
 const About = () => {
   return (
@@ -26,10 +27,12 @@ const About = () => {
           </div>
           <div className="lg:w-1/2 relative animate-on-scroll">
             <div className="relative z-10 overflow-hidden">
-              <img 
-                src="/about-us.png" 
+              <OptimizedImage
+                src="/about-us.jpg"
                 alt="About AZ Africa Global Investments"
                 className="w-full h-auto object-cover"
+                width={1024}
+                height={571}
               />
             </div>
             {/* Decorative elements */}
