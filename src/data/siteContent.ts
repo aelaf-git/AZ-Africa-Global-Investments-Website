@@ -16,9 +16,14 @@ import {
 export type ServiceCategory = {
   id: string;
   title: string;
+  summary: string;
+  /** Replace with /services/{id}.jpg when real images are available */
+  image: string;
   icon: LucideIcon;
   items: string[];
 };
+
+const SERVICE_PLACEHOLDER = '/services/placeholder.svg';
 
 export const aboutContent = {
   title: 'About AZ Africa Global Investments',
@@ -43,6 +48,8 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: 'investment',
     title: 'Investment & Business Partnership Services',
+    summary: 'Financing, regulatory support, joint ventures, and market access for investors and businesses.',
+    image: SERVICE_PLACEHOLDER,
     icon: Briefcase,
     items: [
       'Investment Financing & Mega Project Support',
@@ -56,6 +63,8 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: 'diplomatic',
     title: 'Strategic Partnership & Diplomatic Relations',
+    summary: 'G2G engagement, embassy coordination, and international cooperation frameworks.',
+    image: SERVICE_PLACEHOLDER,
     icon: Handshake,
     items: [
       'Identifying and building strategic local and international partnerships',
@@ -69,6 +78,8 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: 'resource',
     title: 'Resource Mobilization & Project Management',
+    summary: 'Grants, fundraising, and end-to-end development project coordination.',
+    image: SERVICE_PLACEHOLDER,
     icon: FolderKanban,
     items: [
       'Identifying donor, grant, and funding opportunities',
@@ -82,6 +93,8 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: 'policy',
     title: 'Policy Advisory, Research & Institutional Capacity Building',
+    summary: 'PPP advisory, research, capacity building, and institutional collaboration.',
+    image: SERVICE_PLACEHOLDER,
     icon: Scale,
     items: [
       'Policy advisory and international relations support',
@@ -96,6 +109,8 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: 'business-dev',
     title: 'Business Development Services',
+    summary: 'Startup support, market research, and expansion into local and global markets.',
+    image: SERVICE_PLACEHOLDER,
     icon: TrendingUp,
     items: [
       'Supporting startups, entrepreneurs, and business growth',
@@ -108,6 +123,8 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: 'asset',
     title: 'Asset Management Services',
+    summary: 'Asset growth, risk monitoring, and long-term value optimization.',
+    image: SERVICE_PLACEHOLDER,
     icon: Building2,
     items: [
       'Managing assets for efficiency and long-term value',
@@ -120,6 +137,8 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: 'media',
     title: 'Media & Communication Services',
+    summary: 'Branding, PR, digital marketing, and strategic stakeholder communication.',
+    image: SERVICE_PLACEHOLDER,
     icon: Megaphone,
     items: [
       'Corporate communication and public relations',
@@ -132,6 +151,8 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: 'financing',
     title: 'Financing Services',
+    summary: 'Access to finance, investor connections, and structured funding solutions.',
+    image: SERVICE_PLACEHOLDER,
     icon: Wallet,
     items: [
       'Supporting access to finance and investment opportunities',
@@ -144,6 +165,8 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: 'security',
     title: 'Security Advisory',
+    summary: 'Risk advisory, cybersecurity, executive protection, and crisis management.',
+    image: SERVICE_PLACEHOLDER,
     icon: Shield,
     items: [
       'Strategic Security & Risk Advisory',
