@@ -1,4 +1,6 @@
+---
+# cPanel Git Version Control — runs after each pull from GitHub.
+# Update DEPLOYPATH if your cPanel username or docroot differs.
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/azafritp/public_html
-    - /bin/cp -a dist/. $DEPLOYPATH
+    - /bin/bash -lc 'set -euo pipefail; DEPLOYPATH=/home/azafritp/public_html; echo "Deploying to $DEPLOYPATH"; if command -v npm >/dev/null 2>&1; then echo "Running npm install && npm run build..."; npm install; npm run build; else echo "WARN: npm not found in PATH — using dist/ from the repo. Enable Node.js in cPanel or push a fresh dist/ folder."; fi; if [ ! -f dist/index.html ]; then echo "ERROR: dist/index.html is missing. Run npm run build locally, commit dist/, and push — or enable Node.js on cPanel." >&2; exit 1; fi; mkdir -p "$DEPLOYPATH"; /bin/cp -a dist/. "$DEPLOYPATH/"; echo "Deploy finished successfully."'

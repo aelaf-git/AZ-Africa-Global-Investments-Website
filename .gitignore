@@ -84,7 +84,8 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-# dist
+# dist — tracked intentionally for cPanel deploy (run npm run build before push)
+public/originals/
 
 # Gatsby files
 .cache/
