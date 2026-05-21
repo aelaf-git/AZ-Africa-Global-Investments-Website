@@ -30,7 +30,7 @@ const Services = () => {
                 <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
                   <img
                     src={category.image}
-                    alt={`${category.title} — placeholder`}
+                    alt={category.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />

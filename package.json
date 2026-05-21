@@ -11,6 +11,7 @@
         "lint": "eslint .",
         "preview": "vite preview",
         "optimize-images": "python3 scripts/optimize-images.py",
+        "generate-service-images": "python3 scripts/generate-service-images.py",
         "predeploy": "vite build",
         "deploy": "gh-pages -d dist"
     },
