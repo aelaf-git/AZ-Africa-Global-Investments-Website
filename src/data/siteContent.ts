@@ -39,12 +39,6 @@ export const aboutContent = {
   ],
 };
 
-export const whatWeDo = {
-  title: 'What We Do',
-  description:
-    'We bridge the gap between capital, policy, and opportunity across emerging and established markets.',
-};
-
 export const serviceCategories: ServiceCategory[] = [
   {
     id: 'investment',
@@ -195,16 +189,6 @@ export const whyChooseUs = [
     description: 'Transformative solutions that advance long-term growth and prosperity.',
     icon: Briefcase,
   },
-];
-
-/** Add partner logo paths under public/partners/ and update this list */
-export const globalPartners: { name: string; logo?: string }[] = [
-  { name: 'International Development Partner' },
-  { name: 'Financial Institution Partner' },
-  { name: 'Government Agency Partner' },
-  { name: 'Private Sector Partner' },
-  { name: 'Regional Organization Partner' },
-  { name: 'Strategic Investment Partner' },
 ];
 
 export type NewsItem = {

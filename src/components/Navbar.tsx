@@ -9,7 +9,7 @@ const navLinks = [
   { href: '#services', label: 'Services' },
   { href: '#vision-mission', label: 'Vision & Mission' },
   { href: '#why-choose-us', label: 'Why Choose Us' },
-  { href: '#partners', label: 'Partners' },
+  { href: '#partners', label: 'Our Partners' },
   { href: '#news', label: 'News' },
 ];
 

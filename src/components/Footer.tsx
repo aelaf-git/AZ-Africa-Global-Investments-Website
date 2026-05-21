@@ -15,7 +15,7 @@ const companyLinks = [
   { href: '#services', label: 'Services' },
   { href: '#vision-mission', label: 'Vision & Mission' },
   { href: '#why-choose-us', label: 'Why Choose Us' },
-  { href: '#partners', label: 'Global Partners' },
+  { href: '#partners', label: 'Our Partners' },
   { href: '#news', label: 'News' },
   { href: '#contact', label: 'Contact' },
 ];
